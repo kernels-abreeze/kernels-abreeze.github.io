@@ -1,0 +1,133 @@
+:root {
+  --pcb-classic-green: #002d04;
+  --pcb-modern-green: #008c4a;
+  --pcb-silkscreen: #ececdf;
+  --pcb-copper-trace: #b45309;
+  --pcb-solder-pad: #cbd5e1;
+
+  --color-main-teal: #1c8e7a;
+  --accent-cyber-cyan: #06b6d4;
+  --accent-cyber-magenta: #ff4b91;
+  --accent-signal-amber: #ffb200;
+  --accent-laser-violet: #a855f7;
+  --accent-blueprint-blue: #3b82f6;
+  --accent-pcb-green: #10b981;
+  --accent-vector-red: #e11d48;
+  --accent-raw-copper: #f97316;
+  --text-title: #0f172a;
+  --text-body: #115e59;
+
+  --teal-50: #f0faf8;
+  --teal-200: #a1dfd4;
+  --teal-500: #1c8e7a;
+  --teal-700: #125c4f;
+  --teal-900: #0a352d;
+}
+
+body {
+  margin: 0;
+  color: var(--color-main-teal);
+  background-image: radial-gradient(ellipse at top, #ffffff 0%, var(--pcb-silkscreen) 100%);
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+.flexible-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  color: #F8F9FA;
+  background-color: var(--teal-700);
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.flexible-menu a {
+  display: block;
+  text-decoration: none;
+  color: #F8F9FA;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.flexible-menu a:hover {
+  background-color: var(--color-main-teal);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-bar,
+.right-bar {
+  flex: 0 1 20%;
+}
+
+.center-bar {
+  flex: 0 1 60%;
+}
+
+h1 {
+  margin: 80px 0 30px 0;
+  color: var(--teal-700);
+}
+
+.center-bar > h1 {
+  text-align: center;
+}
+
+#projects-h1 {
+
+  margin-top: 20px;
+}
+
+footer {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 60px 0 0;
+  padding: 20px 0 0;
+}
+
+.footer-links-list {
+  display: block;
+  list-style-type: none;
+  margin: 5px 0 30px 0;
+  padding: 0px;
+}
+
+.footer-links-list li {
+  margin: 5px 0;
+  padding: 0;
+}
+
+.footer-links-list  a {
+  margin: 15px 0;
+  padding: 0;
+}
+
+
+
+.link-to {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.link-to:visited {
+  color: darkturquoise;
+}
+
+.link-to:hover {
+  color: bisque;
+}

@@ -2,55 +2,420 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./styles/professional-style.css">
+	<link rel="stylesheet" href="./frame.css">
+	<link rel="stylesheet" href="./projects.css">
+	<link rel="stylesheet" href="./about.css">
+	<script src="./scripts/show_projects.js" defer></script>
 
-	<title>About Nataliya Korovkina</title>
+	<title>Nataliya Korovkina - embedded software</title>
 </head>
 <body>
 	<header class="nav-container">
 		<nav class="flexible-menu">
 			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="resume.html">Resume</a></li>
+				<!-- <li><a href="index.html">About</a></li> -->
+				<!-- <li><a href="resume.html">Resume</a></li> -->
 				<li><a href="projects.html">Projects</a></li>
 			</ul>
 		</nav>
 	</header>
 	
-	<main class="main-content" id="resume">
+	<main class="main-content">
 		<div class="left-bar"></div>
 
-		<div class="center-bar">
+			<div class="center-bar">
 
-			<div id="about-container">
-				<div id="about-text">
+				<div class="intro"><p class="about-p">Hi, I'm Nataliya Korovkina,
+						<span style="font-weight: bold;">aspiring embedded software engineer</span>.
+					</br></br>Currently enrolled in the <span style="font-weight: bold;">Computer Engineering program</span> at 
+						Algonquin College (2026 - 2028)</p>
+				</div>
+				
+				<h1 id="projects-h1">Projects</h1>
 
-					<h1>Nataliya Korovkina</h1>
+				<div class="projects-container">
 
-					<p class="about-p">Hi, I'm Nataliya Korovkina,
-						<span style="font-weight: bold; color: darkturquoise;">embedded software engineer</span> relaunching my career. 
-						Currently, I am enrolled in the <span style="font-weight: bold; color: darkturquoise;">Computer Engineering program</span> at 
-						Algonquin College to refresh my skills, fill a few gaps, and 
-						return to the market.</p>
-					<p hidden class="about-p">In my spare time, I practice historical fencing on Yang side, and grow my epiphytic orchids 
-						on Yin side of self-care.</p>
-					<div id="about-links">
-						<ul>
-							<li><a class="link-to" href="https://www.algonquincollege.com/">Algonquin College</a></li>
-							<li><a class="link-to" href="https://www.linkedin.com/in/nataliya-korovkina-ab5060195/">LinkedIn</a></li>
-						</ul>
+				<!-- Skills filter -->
+				<ul id="project-filter">
+					<li id="skill-all-title" class="active">All</li>
+					<li id="skill-1-title">C language</li>
+					<li id="skill-2-title">Linux</li>
+					<li id="skill-3-title">Virtualization</li> 
+					<li id="skill-other-title">Other</li>
+				</ul>
+
+				<!-- Projects Grid -->
+
+				<div id="projects-grid">
+
+
+					<!-- FlowL2 start -->
+					<div class="project-card"> 
+						<h2 class="project-title">FlowL2</h2>
+						<time class="project-date" datetime="2026-10">Completed October 2026</time>
+						<div class="project-content">
+
+							<div class="layout-main">
+								<p class="project-prod">High-performance Real-Time DPDK-based flow monitor FlowL2</p>
+
+								<ul class="project-links-list">
+									<li><a class="project-link" href="https://github.com/malus-brandywine/FlowL2">FlowL2 (GitHub)</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="stable">
+							<div class="extra-info">
+								<div class="hover-container">
+
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x24D8;&nbsp;</span></p>
+									<div class="hover-text">
+										<ul class="project-points">
+											<li><span style="font-weight: bold;">Developed and tested</span> a user-space traffic monitor 
+												using <span style="font-weight: bold;">DPDK</span> to capture and analyze raw Layer 2 
+												network packets with zero-copy efficiency</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="hover-container-img">
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x1F4F7;&nbsp;</span></p>
+
+									<div class="hover-img" id="hover-img-flowl2">
+											<img src="./images/FlowL2-Screenshot.png" alt="Screenshot of the running monitor">
+									</div>
+								</div> 
+							</div>
+							
+							<ul class="project-skills">
+								<li class="skill-1">C language</li>
+								<li class="skill-2">Linux</li>
+							</ul>
+						</div>
 					</div>
-				</div>
+					<!-- FlowL2 end -->
 
-				<div id="about-pic">
-					<img id="about-pic-img" src="./images/motto.jpeg" 
-					alt="An abstract, digital painting of a futuristic cityscape. 
-					The artwork blends structured geometric skyscrapers with fluid, swirling natural elements like waves and clouds." width="250">
-					<blockquote hidden>
-						"Driven by curiosity"
-					</blockquote>
-				</div>
-			</div>
+
+
+					<!-- FUSE start -->
+					<div class="project-card"> 
+						<h2 class="project-title">FUSE Academic Project</h2>
+						<time class="project-date" datetime="2026-07">Completed July 2026</time>
+						<div class="project-content">
+
+							<div class="layout-main">
+								<p class="project-prod">Computer vision-based educational learning kit 
+										integrating custom software and physical hardware</p>
+
+								<ul class="project-links-list">
+									<li><a class="project-link" href="https://github.com/AC-FUSE-Team/VocabularyBuilder">Vocabulary Builder (GitHub)</a></li>
+									<li><a class="project-link" href="https://github.com/AC-FUSE-Team/MarkerPicker">Calibration Tool (GitHub)</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="stable">
+							<div class="extra-info">
+								<div class="hover-container">
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x24D8;&nbsp;</span></p>
+									
+									<div class="hover-text">
+										<ul class="project-points">
+											<li><span style="font-weight: bold;">Architected</span> a computer vision-based educational learning kit 
+												integrating custom software and physical hardware</li>
+											<li><span style="font-weight: bold;">Designed and implemented </span>the core computer vision components 
+												using <span style="font-weight: bold;">Java and OpenCV</span>, building the OpenCV library from source 
+												for both Linux and Windows environments</li>
+											<li><span style="font-weight: bold;">Collaborated</span> with an industrial designer to design a custom 
+												enclosure tailored specifically to the physical configuration 
+												of the board</li>
+											<li>Established the <span style="font-weight: bold;">shared development environment</span>, coordinated 
+													project timelines, deployed and presented the final product</li>
+										</ul>
+									</div>
+								</div>
+								<p hidden class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x1F4F7;&nbsp;</span></p>
+							</div>
+
+							<ul class="project-skills">
+								<li class="skill-other">Java</li>
+								<li class="skill-other">Computer Vision</li>
+								<li class="skill-other">OpenCV</li>
+							</ul>
+						</div>
+					</div>
+					<!-- FUSE end -->
+
+
+
+					<!-- Zephyr start -->
+					<div class="project-card"> 
+						<h2 class="project-title">z-iot-clock</h2>
+						<time class="project-date" datetime="2025-11">Completed November 2025</time>
+						<div class="project-content">
+
+							<div class="layout-main">
+								<p class="project-prod">Networked RTOS clock application running on Raspberry Pi Pico 2 W
+									using the Zephyr RTOS ecosystem and LVGL library</p>
+
+								<ul class="project-links-list">
+									<li><a class="project-link" href="https://github.com/malus-brandywine/z-iot-clock">z-iot-clock (GitHub)</a></li>
+									<li><a class="project-link" href="https://www.youtube.com/watch?v=sTgmWo46DkM">Demo Video (Youtube)</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="stable">
+							<div class="extra-info">
+								<div class="hover-container">
+
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x24D8;&nbsp;</span></p>
+									<div class="hover-text">
+										<ul class="project-points">
+											<li><span style="font-weight: bold;">Designed, developed and tested</span> the Zephyr application</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="hover-container-img">
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x1F4F7;&nbsp;</span></p>
+
+									<div class="hover-img" id="hover-img-zephyr">
+											<img src="./images/z-iot-clock-collage.jpg" alt="Collage depicting the clock in three operation modes.">
+									</div>
+								</div> 
+							</div>
+
+							<ul class="project-skills">
+								<li class="skill-1">C language</li>
+								<li class="skill-other">Zephyr RTOS</li>
+								<li class="skill-other">Networking</li>
+								<li class="skill-other">LVGL</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Zephyr end -->
+
+
+
+
+					<!-- seL4 start -->
+					<div class="project-card"> 
+						<h2 class="project-title">seL4 Microkernel</h2>
+						<time class="project-date" datetime="2025-08">Completed August 2025</time>
+						<div class="project-content">
+
+							<div class="layout-main">
+								<p class="project-prod">Contributions to seL4 Microkernel Ecosystem</p>
+
+								<ul class="project-links-list">
+									<li><a class="project-link" href="https://github.com/kernels-abreeze/sel4-projects-patches">Contributions to seL4 (GitHub)</a></li>
+									<li><a class="project-link" href="https://github.com/kernels-abreeze/petalinux-ultra96v2-libvmm">Ultra96V2 in libVMM (GitHub)</a></li>
+									<li><a class="project-link" href="https://github.com/kernels-abreeze/peridot-virtio">peridot-virtio (GitHub)</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="stable">
+							<div class="extra-info">
+								<div class="hover-container">
+
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x24D8;&nbsp;</span></p>
+									<div class="hover-text">
+										<ul class="project-points">
+											<li><span style="font-weight: bold;">Contributed code</span> to the mathematically verified <span style="font-weight: bold;">seL4 microkernel</span>, benchmarking
+												projects, and core application frameworks</li>
+											<li><span style="font-weight: bold;">Implemented Avnet Ultra96V2 (Zynq UltraScale+ MPSoC) support</span> within seL4
+												application and virtualization frameworks</li>
+											<li><span style="font-weight: bold;">Debugged and refactored</span> the seL4 virtualization framework to achieve a clearer,
+												more modular system architecture</li>
+											<li>Designed boot infrastructure by creating custom <span style="font-weight: bold;">PetaLinux</span> images, configuring BSP
+												layers for dual native/guest configurations, and patching <span style="font-weight: bold;">Xilinx U-Boot</span> to launch
+												seL4 binaries</li>
+											<li>Created a reproducible development environment using custom <span style="font-weight: bold;">Docker</span> images to
+												isolate toolchains required for seL4 ecosystem applications</li>
+										</ul>
+									</div>
+								</div>
+
+								<div hidden class="hover-container-img">
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x1F4F7;&nbsp;</span></p>
+
+									<div class="hover-img" >
+											<!-- <img src="" alt=""> -->
+									</div>
+								</div> 
+							</div>
+
+							<ul class="project-skills">
+								<li class="skill-1">C language</li>
+								<li class="skill-other">seL4</li>
+								<li class="skill-3">Virtualization</li>
+							</ul>
+						</div>
+					</div>
+					<!-- seL4 end -->
+
+
+
+					<!-- Gunyah start -->
+					<div class="project-card"> 
+						<h2 class="project-title">Gunyah hypervisor</h2>
+						<time class="project-date" datetime="2021-07">Completed July 2021</time>
+						<div class="project-content">
+
+							<div class="layout-main">
+								<p class="project-prod">Analysis of Gunyah type-1 hypervisor (by Qualcomm)</p>
+
+								<ul hidden class="project-links-list">
+									<li><a class="project-link" href="2"><!-- placeholder --></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="stable">
+							<div class="extra-info">
+								<div class="hover-container">
+
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x24D8;&nbsp;</span></p>
+									<div class="hover-text">
+										<ul class="project-points">
+											<li><span style="font-weight: bold;">Analyzed the Gunyah hypervisor codebase (C language)</span> to reverse-engineer and
+												map its high-level architectural design</li>
+											<li>Evaluated kernel-level mechanics to build a foundational understanding of type-1
+												hypervisors prior to entering the seL4 ecosystem</li>
+										</ul>
+									</div>
+								</div>
+
+								<div hidden class="hover-container-img">
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x1F4F7;&nbsp;</span></p>
+
+									<div class="hover-img">
+											<!-- <img src="" alt=""> -->
+									</div>
+								</div> 
+							</div>
+
+							<ul class="project-skills">
+								<li class="skill-1">C language</li>
+								<li class="skill-3">Virtualization</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Gunyah end -->
+
+
+
+					<!-- Ultra96V2 start -->
+					<div class="project-card"> 
+						<h2 class="project-title">Ultra96V2</h2>
+						<time class="project-date" datetime="2021-03">Completed March 2021</time>
+						<div class="project-content">
+
+							<div class="layout-main">
+								<p class="project-prod">Custom Linux kernel bring-up on Ultra96V2</p>
+
+								<ul hidden class="project-links-list">
+									<li><a class="project-link" href="2"><!-- placeholder --></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="stable">
+							<div class="extra-info">
+								<div class="hover-container">
+
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x24D8;&nbsp;</span></p>
+									<div class="hover-text">
+										<ul class="project-points">
+											<li>Executed embedded <span style="font-weight: bold;">Linux bring-up</span> on the Avnet Ultra96V2 (Zynq UltraScale+
+												MPSoC) platform</li>
+											<li>Cliustomized the vendor BSP build scripts to accommodate custom target
+												configurations</li>
+											<li>Configured <span style="font-weight: bold;">network boot capabilities</span> (U-Boot/TFTP) to streamline the flashing and
+												booting of Linux binaries on the target board</li>
+										</ul>
+									</div>
+								</div>
+
+								<div hidden class="hover-container-img">
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x1F4F7;&nbsp;</span></p>
+
+									<div class="hover-img">
+											<!-- <img src="" alt=""> -->
+									</div>
+								</div> 
+							</div>
+
+							<ul class="project-skills">
+								<li class="skill-2">Linux</li>
+								<li class="skill-other">PetaLinux</li>
+								<li class="skill-other">Yocto</li>
+								<li class="skill-other">Xilinx UltraScale+ MPSoc</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Ultra96V2 end -->
+
+
+
+					<!-- Xen start -->
+					<div class="project-card"> 
+						<h2 class="project-title">Xen Hypervisor</h2>
+						<time class="project-date" datetime="2021-01">Completed January 2021</time>
+						<div class="project-content">
+
+							<div class="layout-main">
+								<p class="project-prod">Xen hypervisor bring-up on the Raspberry Pi 4B platform</p>
+
+								<ul hidden class="project-links-list">
+									<li><a class="project-link" href="2"><!-- placeholder --></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="stable">
+							<div class="extra-info">
+								<div class="hover-container">
+
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x24D8;&nbsp;</span></p>
+									<div class="hover-text">
+										<ul class="project-points">
+											<li>Executed <span style="font-weight: bold;">Xen hypervisor bring-up</span> on the <span style="font-weight: bold;">Raspberry Pi 4B platform</span></li>
+											<li>Diagnosed and patched a defect within the <span style="font-weight: bold;">Linux kernel</span>, while identifying and
+												reporting a core hypervisor bug directly to Xen maintainers</li>
+											<li>Configured custom BSP layers and virtualization layers utilizing the Yocto Project
+												(Poky distribution) to build custom system images</li>
+											<li>Established <span style="font-weight: bold;">network boot</span> infrastructure to streamline the loading and execution of
+												Xen and Linux binaries on the target hardware</li>
+										</ul>
+									</div>
+								</div>
+
+								<div hidden class="hover-container-img">
+									<p class="extra"><span style="font-size: 40px; font-weight: bold;">&nbsp;&#x1F4F7;&nbsp;</span></p>
+
+									<div class="hover-img">
+											<!-- <img src="" alt=""> -->
+									</div>
+								</div> 
+							</div>
+
+							<ul class="project-skills">
+								<li class="skill-1">C language</li>
+								<li class="skill-2">Linux</li>
+								<li class="skill-3">Virtualization</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Xen end -->
+
+
+
+					
+				</div> <!-- projects grid -->
+			</div>	
 
 		</div> <!-- center bar -->
 
@@ -58,8 +423,19 @@
 
 	</main>
 
-	<footer id="foot">
-    <p hidden>&copy; 2026 Nataliya Korovkina</p>
-  </footer>
+	<footer>
+
+		<p class="findme">Find me in:</p>
+
+		<ul hidden class="footer-links-list">
+			<li><a class="project-link" href="https://www.linkedin.com/in/nataliya-korovkina-ab5060195/">LinkedIn</a></li>
+			<li><a class="project-link" href="https://github.com/malus-brandywine">GitHub: seL4 & BSP</a></li>
+			<li><a class="project-link" href="https://github.com/kernels-abreeze">GitHub: openCV/Java</a></li>
+		</ul>
+
+    	<p>&copy; 2026 and developed by Nataliya Korovkina</br></p>
+		
+
+	</footer>
 </body>
 </html>
