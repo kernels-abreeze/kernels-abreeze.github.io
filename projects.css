@@ -71,6 +71,8 @@
   text-align: center;
   background-size: 100% auto;
   background-color: var(--teal-700);
+  background-image: url('./images/TechBreeze-4.jpeg');
+  background-position: top;
 }
 
 .project-descr {
